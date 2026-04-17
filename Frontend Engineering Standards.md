@@ -23,10 +23,14 @@ This document serves as the ground truth for Hermes Agent during automated devel
 - **Approach:** Focus on accessibility roles (`getByRole`) over `data-testid` where possible.
 - **Integration:** All components must be tested for interactions (clicks, input changes) and state transitions.
 
-## 3. Workflow & Best Practices
-- **PR Structure:** Automated via GitLab MCP. Description must include the Notion task link and a summary of changes.
-- **Naming Conventions:** PascalCase for components, camelCase for variables/functions.
-- **Review Pipeline:**
+## 4. Workflow & Best Practices
+- **PR Structure**: Automated via GitLab MCP. Description must include the Notion task link and a summary of changes.
+- **Naming Conventions**: PascalCase for components, camelCase for variables/functions.
+- **Handover Protocol**: Before any task completion, Hermes MUST post a handover summary:
+    - *Task Status*: Completed/Blocked.
+    - *Verification Results*: [Link to test run].
+    - *Human Action Required*: [Recommendations/Notes for the developer].
+- **Review Pipeline**:
     1. `npm run typecheck`
     2. `npm run lint`
     3. `npm run test`
