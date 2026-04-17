@@ -23,5 +23,12 @@ This infrastructure bridges human intent (Notion/Figma) with machine execution (
 ## 🚀 Getting Started
 Refer to the [Migration & Deployment Guide](Migration%20&%20Deployment%20Guide.md) to set up this environment on your local machine.
 
+## ✅ TODOs for Implementation
+- [ ] **Define Standards**: Fill in technical stack details in [Frontend Engineering Standards](Frontend%20Engineering%20Standards.md).
+- [ ] **Generate Tokens**: Generate PATs for Figma, Notion, and GitLab.
+- [ ] **Configure Agent**: Inject tokens into `~/.hermes/config.yaml`.
+- [ ] **Validate Sync**: Run a manual sync test using the `sync-notion-to-gitlab` skill.
+- [ ] **CI/CD Approval Gate**: Finalize the human-in-the-loop merge process in GitLab.
+
 ---
 *Maintained by the Frontend Engineering Team.*
