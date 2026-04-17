@@ -1,0 +1,29 @@
+# ── MCP Server Configuration (Complete Setup) ──
+# Copy this block into your ~/.hermes/config.yaml file.
+# Replace the tokens with your actual Personal Access Tokens (PATs).
+
+mcp_servers:
+  # Figma Dev Mode MCP (Requires Desktop App + Dev Mode Enabled)
+  figma_dev:
+    command: "npx"
+    args: ["-y", "figma-developer-mcp", "--stdio"]
+    env:
+      FIGMA_API_KEY: "PASTE_YOUR_FIGMA_PAT_HERE"
+    timeout: 120
+
+  # Notion MCP
+  notion:
+    command: "npx"
+    args: ["-y", "@notionhq/notion-mcp-server"]
+    env:
+      NOTION_INTERNAL_ACCESS_TOKEN: "PASTE_YOUR_NOTION_INTEGRATION_TOKEN_HERE"
+    timeout: 120
+
+  # GitLab MCP
+  gitlab:
+    command: "npx"
+    args: ["-y", "@structured-world/gitlab-mcp"]
+    env:
+      GITLAB_PERSONAL_ACCESS_TOKEN: "PASTE_YOUR_GITLAB_PAT_HERE"
+      GITLAB_URL: "https://gitlab.com"
+    timeout: 120
